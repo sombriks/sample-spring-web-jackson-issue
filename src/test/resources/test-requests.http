@@ -2,7 +2,6 @@
 
 GET http://localhost:8080/books
 
-
 ###
 
 # create a book
@@ -11,3 +10,12 @@ POST http://localhost:8080/books
 Content-Type: application/json
 
 {"title":"teste2"}
+
+###
+
+# call the faulty endpoint
+
+POST http://localhost:8080/books/faulty
+Content-Type: application/json
+
+{"shouldBeABoolean":"true"}
