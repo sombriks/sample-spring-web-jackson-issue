@@ -2,6 +2,8 @@
 
 simple project to demonstrate an issue with bad entity modelling and jackson
 
+covered on [this blog post](https://sombriks.com/blog/0045-keep-your-log-level-sane-on-spring-boot/)
+
 ## before you run this
 
 please create a .env file with proper values for mongodb setup 
