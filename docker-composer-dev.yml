@@ -1,0 +1,12 @@
+# sidecar with a mongo database so you don't have to configure one
+# make sure you have a .env file with proper values
+version: "3.9"
+services:
+  mongodb:
+    restart: always
+    image: docker.io/library/mongo:latest
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: "${MONGO_INITDB_ROOT_USERNAME}"
+      MONGO_INITDB_ROOT_PASSWORD: "${MONGO_INITDB_ROOT_PASSWORD}"
+    ports:
+      - "27017:27017"

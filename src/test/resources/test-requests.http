@@ -1,0 +1,13 @@
+# list all books
+
+GET http://localhost:8080/books
+
+
+###
+
+# create a book
+
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{"title":"teste2"}
